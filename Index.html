@@ -1,325 +1,204 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Jincai Mahjong Community</title>
-
-<style>
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  color: white;
-
-  background:
-    radial-gradient(circle at top, #7d1616 0%, #4a0505 45%, #260000 100%);
-
-  text-align: center;
-}
-
-.container {
-  width: 100%;
-  max-width: 500px;
-  margin: auto;
-  padding: 45px 25px 55px;
-}
-
-/* LOGO */
-
-.logo-circle {
-  width: 170px;
-  height: 170px;
-
-  margin: 10px auto 30px;
-
-  border: 3px solid #d4af37;
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow:
-    0 0 20px rgba(212, 175, 55, 0.35),
-    inset 0 0 20px rgba(212, 175, 55, 0.1);
-}
-
-.mahjong-tile {
-  width: 100px;
-  height: 125px;
-
-  background: linear-gradient(135deg, #ffffff, #e7dfc8);
-
-  border: 4px solid #d4af37;
-  border-radius: 12px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: #168a45;
-
-  font-size: 72px;
-  font-weight: bold;
-
-  box-shadow:
-    0 8px 18px rgba(0, 0, 0, 0.4);
-}
-
-/* TITLE */
-
-h1 {
-  color: #f5d36a;
-
-  font-size: 46px;
-
-  letter-spacing: 5px;
-
-  margin-bottom: 10px;
-
-  text-shadow:
-    0 0 12px rgba(212, 175, 55, 0.35);
-}
-
-.community {
-  font-size: 25px;
-
-  letter-spacing: 9px;
-
-  color: #f5f1e6;
-
-  margin-bottom: 20px;
-}
-
-.jincai {
-  color: #d4af37;
-
-  font-size: 17px;
-
-  letter-spacing: 7px;
-
-  margin-bottom: 55px;
-}
-
-/* BUTTON */
-
-.links {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.link-button {
-  min-height: 105px;
-
-  padding: 18px 25px;
-
-  border: 2px solid #d4af37;
-  border-radius: 60px;
-
-  text-decoration: none;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background:
-    linear-gradient(
-      135deg,
-      #8c0909,
-      #550000
-    );
-
-  color: #f5d36a;
-
-  box-shadow:
-    0 5px 15px rgba(0, 0, 0, 0.25);
-
-  transition: 0.2s;
-}
-
-.link-button:active {
-  transform: scale(0.98);
-}
-
-.button-content {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.button-title {
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.button-subtitle {
-  font-size: 14px;
-  color: #f0dfaa;
-}
-
-/* FOOTER */
-
-.footer {
-  margin-top: 60px;
-
-  padding-top: 25px;
-
-  border-top: 1px solid rgba(212, 175, 55, 0.45);
-
-  color: #d4af37;
-
-  letter-spacing: 5px;
-
-  font-size: 14px;
-}
-
-.footer p {
-  margin-top: 18px;
-
-  color: #f0dfaa;
-
-  font-size: 12px;
-
-  letter-spacing: 3px;
-}
-
-/* MOBILE */
-
-@media (max-width: 400px) {
-
-  .container {
-    padding: 35px 18px 50px;
-  }
-
-  h1 {
-    font-size: 38px;
-  }
-
-  .community {
-    font-size: 20px;
-    letter-spacing: 7px;
-  }
-
-  .jincai {
-    font-size: 14px;
-    letter-spacing: 5px;
-  }
-
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jincai Mahjong Community</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #120707;
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #8b0d16;
+      border-bottom: 3px solid #d4af37;
+      padding: 18px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #f5d76e;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin-top: 6px;
+      color: #ffffff;
+      font-size: 13px;
+      opacity: 0.85;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 28px 18px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 28px 18px;
+      border: 1px solid #d4af37;
+      border-radius: 12px;
+      background: linear-gradient(145deg, #5d0810, #220707);
+    }
+
+    .mahjong {
+      font-size: 52px;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      color: #f5d76e;
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      color: #e7e7e7;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #f5d76e;
+      margin: 35px 0 18px;
+      font-size: 22px;
+    }
+
+    .rules {
+      display: grid;
+      gap: 12px;
+    }
+
+    .rule {
+      background: #210b0d;
+      border-left: 4px solid #d4af37;
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .rule h3 {
+      color: #f5d76e;
+      margin-bottom: 7px;
+      font-size: 17px;
+    }
+
+    .rule p {
+      color: #e8e8e8;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .join {
+      margin-top: 35px;
+      text-align: center;
+      background: #8b0d16;
+      border: 1px solid #d4af37;
+      border-radius: 12px;
+      padding: 25px 18px;
+    }
+
+    .join h2 {
+      color: #f5d76e;
+      margin-bottom: 10px;
+    }
+
+    .join p {
+      color: white;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .join a {
+      display: inline-block;
+      background: #d4af37;
+      color: #2a0909;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      color: #bdbdbd;
+      font-size: 12px;
+      border-top: 1px solid #4a1a1d;
+      margin-top: 40px;
+    }
+  </style>
 </head>
-
 
 <body>
 
-<div class="container">
+  <header>
+    <h1>JINCAI MAHJONG COMMUNITY</h1>
+    <p>Play • Learn • Respect • Enjoy</p>
+  </header>
 
+  <main class="container">
 
-  <!-- LOGO -->
+    <section class="hero">
+      <div class="mahjong">🀄</div>
+      <h2>Welcome to Our Community</h2>
+      <p>
+        Komunitas untuk para pemain Mahjong yang ingin bermain,
+        belajar, berbagi pengalaman, dan menikmati permainan bersama.
+      </p>
+    </section>
 
-  <div class="logo-circle">
+    <h2 class="section-title">Community Rules</h2>
 
-    <div class="mahjong-tile">
-      發
-    </div>
+    <section class="rules">
 
-  </div>
-
-
-  <!-- TITLE -->
-
-  <h1>MAHJONG</h1>
-
-  <div class="community">
-    COMMUNITY
-  </div>
-
-  <div class="jincai">
-    JINCAI MAHJONG
-  </div>
-
-
-  <!-- BUTTON -->
-
-  <div class="links">
-
-
-    <!-- WHATSAPP ADMIN -->
-
-    <a
-      href="https://api.whatsapp.com/send?phone=6285922217655"
-      target="_blank"
-      rel="noopener"
-      class="link-button"
-    >
-
-      <div class="button-content">
-
-        <div class="button-title">
-          💬 WHATSAPP ADMIN
-        </div>
-
-        <div class="button-subtitle">
-          Hubungi admin untuk informasi
-        </div>
-
+      <div class="rule">
+        <h3>Respect Everyone</h3>
+        <p>Hormati semua member dan jaga komunikasi tetap baik.</p>
       </div>
 
-    </a>
-
-
-    <!-- KOMUNITAS -->
-
-    <a
-      href="https://chat.whatsapp.com/Celvq8qXkJh5u85OnmGhmX"
-      target="_blank"
-      rel="noopener"
-      class="link-button"
-    >
-
-      <div class="button-content">
-
-        <div class="button-title">
-          👥 GABUNG KOMUNITAS
-        </div>
-
-        <div class="button-subtitle">
-          Join grup komunitas WhatsApp
-        </div>
-
+      <div class="rule">
+        <h3>Play Fair</h3>
+        <p>Bermain dengan jujur dan sportif demi kenyamanan bersama.</p>
       </div>
 
-    </a>
+      <div class="rule">
+        <h3>Keep It Friendly</h3>
+        <p>Jaga suasana komunitas tetap santai, positif, dan nyaman.</p>
+      </div>
 
+      <div class="rule">
+        <h3>No Toxic & Drama</h3>
+        <p>Hindari toxic, keributan, dan drama yang mengganggu komunitas.</p>
+      </div>
 
-  </div>
+    </section>
 
+    <section class="join">
+      <h2>Join Our Community</h2>
+      <p>Temukan teman bermain dan nikmati Mahjong bersama kami.</p>
 
-  <!-- FOOTER -->
+      <a href="#">JOIN COMMUNITY</a>
+    </section>
 
-  <div class="footer">
+  </main>
 
-    JINCAI MAHJONG
-
-    <p>
-      SALAM MAHJONG
-    </p>
-
-  </div>
-
-
-</div>
+  <footer>
+    © 2026 Jincai Mahjong Community
+  </footer>
 
 </body>
 </html>
