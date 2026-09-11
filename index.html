@@ -1,204 +1,187 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Jincai Mahjong Community</title>
+<title>Jincai Mahjong Community</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #120707;
-      color: white;
-      min-height: 100vh;
-    }
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: radial-gradient(circle at top, #7d1616 0%, #4a0505 45%, #260000 100%);
+  text-align: center;
+}
 
-    header {
-      background: #8b0d16;
-      border-bottom: 3px solid #d4af37;
-      padding: 18px 20px;
-      text-align: center;
-    }
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 45px 25px 55px;
+}
 
-    header h1 {
-      color: #f5d76e;
-      font-size: 26px;
-      letter-spacing: 1px;
-    }
+.logo-circle {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto 30px;
+  border: 3px solid #d4af37;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.35);
+}
 
-    header p {
-      margin-top: 6px;
-      color: #ffffff;
-      font-size: 13px;
-      opacity: 0.85;
-    }
+.mahjong-tile {
+  width: 90px;
+  height: 110px;
+  background: linear-gradient(135deg, #ffffff, #e7dfc8);
+  border: 4px solid #d4af37;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #168a45;
+  font-size: 64px;
+  font-weight: bold;
+}
 
-    .container {
-      max-width: 700px;
-      margin: auto;
-      padding: 28px 18px;
-    }
+h1 {
+  color: #f5d36a;
+  font-size: 42px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
 
-    .hero {
-      text-align: center;
-      padding: 28px 18px;
-      border: 1px solid #d4af37;
-      border-radius: 12px;
-      background: linear-gradient(145deg, #5d0810, #220707);
-    }
+.community {
+  font-size: 23px;
+  letter-spacing: 8px;
+  color: #f5f1e6;
+  margin-bottom: 18px;
+}
 
-    .mahjong {
-      font-size: 52px;
-      margin-bottom: 12px;
-    }
+.jincai {
+  color: #d4af37;
+  font-size: 16px;
+  letter-spacing: 6px;
+  margin-bottom: 45px;
+}
 
-    .hero h2 {
-      color: #f5d76e;
-      font-size: 25px;
-      margin-bottom: 12px;
-    }
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
 
-    .hero p {
-      color: #e7e7e7;
-      line-height: 1.7;
-      font-size: 15px;
-    }
+.link-button {
+  min-height: 100px;
+  padding: 18px 20px;
+  border: 2px solid #d4af37;
+  border-radius: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #8c0909, #550000);
+  color: #f5d36a;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
 
-    .section-title {
-      text-align: center;
-      color: #f5d76e;
-      margin: 35px 0 18px;
-      font-size: 22px;
-    }
+.button-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
 
-    .rules {
-      display: grid;
-      gap: 12px;
-    }
+.button-title {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 
-    .rule {
-      background: #210b0d;
-      border-left: 4px solid #d4af37;
-      border-radius: 8px;
-      padding: 16px;
-    }
+.button-subtitle {
+  font-size: 13px;
+  color: #f0dfaa;
+}
 
-    .rule h3 {
-      color: #f5d76e;
-      margin-bottom: 7px;
-      font-size: 17px;
-    }
+.footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(212, 175, 55, 0.45);
+  color: #d4af37;
+  letter-spacing: 4px;
+  font-size: 13px;
+}
 
-    .rule p {
-      color: #e8e8e8;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .join {
-      margin-top: 35px;
-      text-align: center;
-      background: #8b0d16;
-      border: 1px solid #d4af37;
-      border-radius: 12px;
-      padding: 25px 18px;
-    }
-
-    .join h2 {
-      color: #f5d76e;
-      margin-bottom: 10px;
-    }
-
-    .join p {
-      color: white;
-      font-size: 14px;
-      margin-bottom: 18px;
-    }
-
-    .join a {
-      display: inline-block;
-      background: #d4af37;
-      color: #2a0909;
-      padding: 12px 22px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px 15px;
-      color: #bdbdbd;
-      font-size: 12px;
-      border-top: 1px solid #4a1a1d;
-      margin-top: 40px;
-    }
-  </style>
+.footer p {
+  margin-top: 15px;
+  color: #f0dfaa;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>JINCAI MAHJONG COMMUNITY</h1>
-    <p>Play • Learn • Respect • Enjoy</p>
-  </header>
+<div class="container">
 
-  <main class="container">
+  <div class="logo-circle">
+    <div class="mahjong-tile">發</div>
+  </div>
 
-    <section class="hero">
-      <div class="mahjong">🀄</div>
-      <h2>Welcome to Our Community</h2>
-      <p>
-        Komunitas untuk para pemain Mahjong yang ingin bermain,
-        belajar, berbagi pengalaman, dan menikmati permainan bersama.
-      </p>
-    </section>
+  <h1>MAHJONG</h1>
 
-    <h2 class="section-title">Community Rules</h2>
+  <div class="community">COMMUNITY</div>
 
-    <section class="rules">
+  <div class="jincai">JINCAI MAHJONG</div>
 
-      <div class="rule">
-        <h3>Respect Everyone</h3>
-        <p>Hormati semua member dan jaga komunikasi tetap baik.</p>
+  <div class="links">
+
+    <a
+      href="https://api.whatsapp.com/send?phone=6285922217655"
+      target="_blank"
+      rel="noopener"
+      class="link-button"
+    >
+      <div class="button-content">
+        <div class="button-title">💬 WHATSAPP ADMIN</div>
+        <div class="button-subtitle">
+          Hubungi admin untuk informasi
+        </div>
       </div>
+    </a>
 
-      <div class="rule">
-        <h3>Play Fair</h3>
-        <p>Bermain dengan jujur dan sportif demi kenyamanan bersama.</p>
+    <a
+      href="https://chat.whatsapp.com/Celvq8qXkJh5u85OnmGhmX"
+      target="_blank"
+      rel="noopener"
+      class="link-button"
+    >
+      <div class="button-content">
+        <div class="button-title">👥 GABUNG KOMUNITAS</div>
+        <div class="button-subtitle">
+          Join grup komunitas WhatsApp
+        </div>
       </div>
+    </a>
 
-      <div class="rule">
-        <h3>Keep It Friendly</h3>
-        <p>Jaga suasana komunitas tetap santai, positif, dan nyaman.</p>
-      </div>
+  </div>
 
-      <div class="rule">
-        <h3>No Toxic & Drama</h3>
-        <p>Hindari toxic, keributan, dan drama yang mengganggu komunitas.</p>
-      </div>
+  <div class="footer">
+    JINCAI MAHJONG
+    <p>SALAM MAHJONG</p>
+  </div>
 
-    </section>
-
-    <section class="join">
-      <h2>Join Our Community</h2>
-      <p>Temukan teman bermain dan nikmati Mahjong bersama kami.</p>
-
-      <a href="#">JOIN COMMUNITY</a>
-    </section>
-
-  </main>
-
-  <footer>
-    © 2026 Jincai Mahjong Community
-  </footer>
+</div>
 
 </body>
 </html>
