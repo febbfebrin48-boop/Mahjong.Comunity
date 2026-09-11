@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jincai Mahjong Community</title>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: white;
+
+  background:
+    radial-gradient(circle at top, #7d1616 0%, #4a0505 45%, #260000 100%);
+
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 45px 25px 55px;
+}
+
+/* LOGO */
+
+.logo-circle {
+  width: 170px;
+  height: 170px;
+
+  margin: 10px auto 30px;
+
+  border: 3px solid #d4af37;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    0 0 20px rgba(212, 175, 55, 0.35),
+    inset 0 0 20px rgba(212, 175, 55, 0.1);
+}
+
+.mahjong-tile {
+  width: 100px;
+  height: 125px;
+
+  background: linear-gradient(135deg, #ffffff, #e7dfc8);
+
+  border: 4px solid #d4af37;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #168a45;
+
+  font-size: 72px;
+  font-weight: bold;
+
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* TITLE */
+
+h1 {
+  color: #f5d36a;
+
+  font-size: 46px;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 10px;
+
+  text-shadow:
+    0 0 12px rgba(212, 175, 55, 0.35);
+}
+
+.community {
+  font-size: 25px;
+
+  letter-spacing: 9px;
+
+  color: #f5f1e6;
+
+  margin-bottom: 20px;
+}
+
+.jincai {
+  color: #d4af37;
+
+  font-size: 17px;
+
+  letter-spacing: 7px;
+
+  margin-bottom: 55px;
+}
+
+/* BUTTON */
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.link-button {
+  min-height: 105px;
+
+  padding: 18px 25px;
+
+  border: 2px solid #d4af37;
+  border-radius: 60px;
+
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #8c0909,
+      #550000
+    );
+
+  color: #f5d36a;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.25);
+
+  transition: 0.2s;
+}
+
+.link-button:active {
+  transform: scale(0.98);
+}
+
+.button-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.button-title {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.button-subtitle {
+  font-size: 14px;
+  color: #f0dfaa;
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 60px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid rgba(212, 175, 55, 0.45);
+
+  color: #d4af37;
+
+  letter-spacing: 5px;
+
+  font-size: 14px;
+}
+
+.footer p {
+  margin-top: 18px;
+
+  color: #f0dfaa;
+
+  font-size: 12px;
+
+  letter-spacing: 3px;
+}
+
+/* MOBILE */
+
+@media (max-width: 400px) {
+
+  .container {
+    padding: 35px 18px 50px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .community {
+    font-size: 20px;
+    letter-spacing: 7px;
+  }
+
+  .jincai {
+    font-size: 14px;
+    letter-spacing: 5px;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+  <!-- LOGO -->
+
+  <div class="logo-circle">
+
+    <div class="mahjong-tile">
+      發
+    </div>
+
+  </div>
+
+
+  <!-- TITLE -->
+
+  <h1>MAHJONG</h1>
+
+  <div class="community">
+    COMMUNITY
+  </div>
+
+  <div class="jincai">
+    JINCAI MAHJONG
+  </div>
+
+
+  <!-- BUTTON -->
+
+  <div class="links">
+
+
+    <!-- WHATSAPP ADMIN -->
+
+    <a
+      href="https://api.whatsapp.com/send?phone=6285922217655"
+      target="_blank"
+      rel="noopener"
+      class="link-button"
+    >
+
+      <div class="button-content">
+
+        <div class="button-title">
+          💬 WHATSAPP ADMIN
+        </div>
+
+        <div class="button-subtitle">
+          Hubungi admin untuk informasi
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <!-- KOMUNITAS -->
+
+    <a
+      href="https://chat.whatsapp.com/Celvq8qXkJh5u85OnmGhmX"
+      target="_blank"
+      rel="noopener"
+      class="link-button"
+    >
+
+      <div class="button-content">
+
+        <div class="button-title">
+          👥 GABUNG KOMUNITAS
+        </div>
+
+        <div class="button-subtitle">
+          Join grup komunitas WhatsApp
+        </div>
+
+      </div>
+
+    </a>
+
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <div class="footer">
+
+    JINCAI MAHJONG
+
+    <p>
+      SALAM MAHJONG
+    </p>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>
